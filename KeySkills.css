@@ -1,0 +1,198 @@
+body {
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(135deg, #14222F, #173B41, #43818B);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    font-family: sans-serif;
+}
+
+.controls {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    display: flex;
+    gap: 10px;
+    z-index: 100;
+}
+
+.controls button {
+    padding: 8px 12px;
+    font-size: 0.9em;
+    border: none;
+    border-radius: 5px;
+    background-color: #f0f0f0;
+    color: #333;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.controls button:hover {
+    background-color: #ddd;
+}
+
+.main-container {
+    background: white;
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+    max-width: 800px;
+    width: 90%;
+    overflow-y: auto;
+    max-height: 90vh;
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+nav {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+nav button {
+    padding: 10px 15px;
+    border: none;
+    border-radius: 10px;
+    background: #F6AE26;
+    color: white;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+nav button:hover {
+    background: #ECCEAC;
+}
+
+.container {
+    margin-bottom: 20px;
+}
+
+/* CERTIFICADOS */
+.certificates-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+}
+
+.certificates-grid figure {
+    margin: 0;
+}
+
+.certificates-grid img {
+    width: 100%;
+    height: auto;
+    max-height: 60px; /* Imágenes más pequeñas */
+    object-fit: contain;
+    box-shadow: 5px 5px 10px 5px #0000004d;
+    margin-bottom: 5px;
+    padding: 2px;
+    border-radius: 10px;
+    display: block;
+}
+
+.certificates-grid figcaption {
+    font-size: 10px;
+    text-align: center;
+}
+
+#texto {
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+body.dark-mode {
+    background: #282828;
+    color: #f0f0f0;
+}
+
+body.dark-mode .main-container {
+    background-color: #141414;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.7);
+}
+
+body.dark-mode nav button,
+body.dark-mode .controls button {
+    background-color: #230046;
+    color: #eee;
+}
+
+body.dark-mode nav button:hover,
+body.dark-mode .controls button:hover {
+    background-color: #320064;
+}
+
+body.dark-mode #info b {
+    color: #ddd;
+}
+
+.skills-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-top: 10px;
+}
+
+.skills-grid img {
+    width: 60px;
+    height: 60px;
+    padding: 5px;
+    border-radius: 15px;
+    object-fit: contain;
+    background-color: #1a1a1a;
+    transition: transform 0.3s ease;
+}
+
+.skills-grid img[src*="java"] {
+    box-shadow: 0 0 15px 3px #f89820;
+}
+.skills-grid img[src*="go"] {
+    box-shadow: 0 0 15px 3px #00ADD8;
+}
+.skills-grid img[src*="python"] {
+    box-shadow: 0 0 15px 3px #306998;
+}
+.skills-grid img[src*="mysql"] {
+    box-shadow: 0 0 15px 3px #00758F;
+}
+.skills-grid img[src*="docker"] {
+    box-shadow: 0 0 15px 3px #0db7ed;
+}
+.skills-grid img[src*="spring"] {
+    box-shadow: 0 0 15px 3px #6db33f;
+}
+.skills-grid img[src*="zoho"] {
+    box-shadow: 0 0 15px 3px #ff4f1f;
+}
+.skills-grid img[src*="js"] {
+    box-shadow: 0 0 15px 3px #f7df1e;
+}
+.skills-grid img[src*="html"] {
+    box-shadow: 0 0 15px 3px #e34c26;
+}
+.skills-grid img[src*="css"] {
+    box-shadow: 0 0 15px 3px #264de4;
+}
+.skills-grid img[src*="vscode"] {
+    box-shadow: 0 0 15px 3px #007ACC;
+}
+.skills-grid img[src*="wordpress"] {
+    box-shadow: 0 0 15px 3px #21759b;
+}
+
+.skill-icon {
+  width: 60px;
+  height: auto;
+  margin: 10px;
+  transition: transform 0.3s ease;
+}
+
+.skill-icon:hover {
+  transform: scale(1.1);
+}
+
+#skills img {
+  vertical-align: middle;
+}
